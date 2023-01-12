@@ -6,7 +6,7 @@ Architectures: amd64
 
 Origin: repo.example.com
 Label: repo.example.com
-Codename: xenial-unstable
+Codename: xenial-stable
 Components: main
 Architectures: amd64
 
@@ -18,13 +18,31 @@ Architectures: amd64
 
 Origin: repo.example.com
 Label: repo.example.com
-Codename: xenial-stable
+Codename: xenial-unstable
 Components: main
 Architectures: amd64
 
 Origin: repo.example.com
 Label: repo.example.com
-Codename: focal-unstable
+Codename: bionic-stable
+Components: main
+Architectures: amd64
+
+Origin: repo.example.com
+Label: repo.example.com
+Codename: bionic-testing
+Components: main
+Architectures: amd64
+
+Origin: repo.example.com
+Label: repo.example.com
+Codename: bionic-unstable
+Components: main
+Architectures: amd64
+
+Origin: repo.example.com
+Label: repo.example.com
+Codename: focal-stable
 Components: main
 Architectures: amd64
 
@@ -36,7 +54,7 @@ Architectures: amd64
 
 Origin: repo.example.com
 Label: repo.example.com
-Codename: focal-stable
+Codename: focal-unstable
 Components: main
 Architectures: amd64
 
