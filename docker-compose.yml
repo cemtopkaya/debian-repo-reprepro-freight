@@ -27,11 +27,15 @@ services:
     networks:
       - apt
     volumes:
+      # nginx ayarları
       - ./volume/reprepro/default:/etc/nginx/sites-available/default
+      # reprepro conf dizini (icinde incomig, distributions, options... dosyaları var)
       - ./volume/reprepro/conf:/var/repositories/conf/
+      # dışarıdan gelen ve taranarak repoya alınacak deb dosyalarının karşılandığı ana dizin
       - ./volume/reprepro/incoming:/var/repositories/incoming
-      - ./volume/reprepro/incoming_tmp:/var/repositories/incoming_tmp
-      - ./volume/reprepro/incoming_log:/var/repositories/incoming_log
+      # dağıtımların Release dosyalarının tutulduğu ana dizin
       - ./volume/reprepro/dists:/var/repositories/dists
+      # taradıkça güncellenen veritabanı
       - ./volume/reprepro/db:/var/repositories/db
+      # .deb paketlerinin dizinler halinde saklandığı ana dizin 
       - ./volume/reprepro/pool:/var/repositories/pool
