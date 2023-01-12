@@ -4,6 +4,8 @@ https://wikitech.wikimedia.org/wiki/Reprepro
 
 https://docs.debops.org/en/latest/ansible/roles/reprepro/defaults-detailed.html
 
+https://www.porcheron.info/setup-your-debianubuntu-repository-with-reprepro/
+
 
 ## nginx İle Açık DEBIAN Paket Havuzuna Dönüştürelim
 
@@ -29,7 +31,27 @@ server {
 
 ## Komutlar
 
+### export
 
+`export` ile `conf/[incoming|distrubutions...]` dosyaları içinde tanımlı dizinleri oluşturuyoruz
+
+```
+reprepro -Vb /var/repositories/ export
+```
+
+`-V` ile `verbose` çıktı
+
+`-b /var/repositories` ile `basedir` olarak `/var/repositories` dizininde çalışmasını söylüyoruz. Böylece `--basedir` veya `-b` ile belirtilen dizinde `conf/[incoming|distrubutions...]` dosyalarını arıyor.
+
+![1673559416961](image/README/1673559416961.png)
+
+Aynı sonucu zaten reprepro'nun kök dizini olarak başlatacağımız (göreceli olarak conf/[distrubutions|incoming|options..] dosyalarının olduğu) dizinde ve fazladan ekran çıktısı istemeden çalıştırırsak sonucun aynı olduğunu görürüz (`reprepro export`):
+
+![1673559787383](image/README/1673559787383.png)
+
+
+
+### list
 
 ```
 $ reprepro list xenial-stable
