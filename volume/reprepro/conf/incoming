@@ -1,9 +1,9 @@
 Name: incoming-xenial-oldstable
 IncomingDir: /var/repositories/incoming/dists/xenial/oldstable
-Allow: xenial-unstable
+Allow: xenial-oldstable
 Cleanup: on_deny on_error
-Tempdir: /var/repositories/incoming/tmp/xenial/unstable
-LogDir: /var/repositories/incoming/log/xenial/unstable
+Tempdir: /var/repositories/incoming/tmp/xenial/oldstable
+LogDir: /var/repositories/incoming/log/xenial/oldstable
 
 Name: incoming-xenial-stable
 IncomingDir: /var/repositories/incoming/dists/xenial/stable
@@ -25,7 +25,6 @@ Allow: xenial-unstable
 Cleanup: on_deny on_error
 Tempdir: /var/repositories/incoming/tmp/xenial/unstable
 LogDir: /var/repositories/incoming/log/xenial/unstable
-
 
 Name: incoming-bionic-stable
 IncomingDir: /var/repositories/incoming/dists/bionic/stable
