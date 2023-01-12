@@ -1,0 +1,71 @@
+Name: incoming-xenial-oldstable
+IncomingDir: /var/repositories/incoming/dists/xenial/oldstable
+Allow: xenial-unstable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/xenial/unstable
+LogDir: /var/repositories/incoming/log/xenial/unstable
+
+Name: incoming-xenial-stable
+IncomingDir: /var/repositories/incoming/dists/xenial/stable
+Allow: xenial-stable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/xenial/stable
+LogDir: /var/repositories/incoming/log/xenial/stable
+
+Name: incoming-xenial-testing
+IncomingDir: /var/repositories/incoming/dists/xenial/testing
+Allow: xenial-testing
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/xenial/testing
+LogDir: /var/repositories/incoming/log/xenial/testing
+
+Name: incoming-xenial-unstable
+IncomingDir: /var/repositories/incoming/dists/xenial/unstable
+Allow: xenial-unstable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/xenial/unstable
+LogDir: /var/repositories/incoming/log/xenial/unstable
+
+
+Name: incoming-bionic-stable
+IncomingDir: /var/repositories/incoming/dists/bionic/stable
+Allow: bionic-stable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/bionic/stable
+LogDir: /var/repositories/incoming/log/bionic/stable
+
+Name: incoming-bionic-testing
+IncomingDir: /var/repositories/incoming/dists/bionic/testing
+Allow: bionic-testing
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/bionic/testing
+LogDir: /var/repositories/incoming/log/bionic/testing
+
+Name: incoming-bionic-unstable
+IncomingDir: /var/repositories/incoming/dists/bionic/unstable
+Allow: bionic-unstable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/bionic/unstable
+LogDir: /var/repositories/incoming/log/bionic/unstable
+
+
+Name: incoming-focal-stable
+IncomingDir: /var/repositories/incoming/dists/focal/stable
+Allow: focal-stable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/focal/stable
+LogDir: /var/repositories/incoming/log/focal/stable
+
+Name: incoming-focal-testing
+IncomingDir: /var/repositories/incoming/dists/focal/testing
+Allow: focal-testing
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/focal/testing
+LogDir: /var/repositories/incoming/log/focal/testing
+
+Name: incoming-focal-unstable
+IncomingDir: /var/repositories/incoming/dists/focal/unstable
+Allow: focal-unstable
+Cleanup: on_deny on_error
+Tempdir: /var/repositories/incoming/tmp/focal/unstable
+LogDir: /var/repositories/incoming/log/focal/unstable

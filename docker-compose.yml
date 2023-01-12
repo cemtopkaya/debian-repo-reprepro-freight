@@ -1,0 +1,37 @@
+version: "3.9"
+
+networks:
+    apt:
+        # use the bridge driver, but enable IPv6
+        driver: bridge
+
+services:
+
+  client:
+    image: ubuntu:xenial
+    container_name: uuu
+    command: tail -f /dev/null
+    networks:
+      - apt
+
+  reprepro:
+    image: reprepro
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    container_name: rrr
+    working_dir: /var/repositories
+    command: tail -f /dev/null
+    networks:
+      - apt
+    volumes:
+      - ./volume/reprepro/default:/etc/nginx/sites-available/default
+      - ./volume/reprepro/conf:/var/repositories/conf/
+      - ./volume/reprepro/incoming:/var/repositories/incoming
+      - ./volume/reprepro/incoming_tmp:/var/repositories/incoming_tmp
+      - ./volume/reprepro/incoming_log:/var/repositories/incoming_log
+      - ./volume/reprepro/dists:/var/repositories/dists
+      - ./volume/reprepro/db:/var/repositories/db
+      - ./volume/reprepro/pool:/var/repositories/pool

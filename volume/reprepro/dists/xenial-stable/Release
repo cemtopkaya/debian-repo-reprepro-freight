@@ -1,0 +1,18 @@
+Origin: repo.example.com
+Label: repo.example.com
+Codename: xenial-stable
+Date: Thu, 12 Jan 2023 09:57:53 UTC
+Architectures: amd64
+Components: main
+MD5Sum:
+ 7aafa58caac90264c6083ae690ebbf80 457 main/binary-amd64/Packages
+ 4dc755937317020f53764e9f7b2beac6 330 main/binary-amd64/Packages.gz
+ e7bfd8a01529f3817f89f393b3ff187b 85 main/binary-amd64/Release
+SHA1:
+ e1f2e73dbeef57a437d82d16a543ae9e4fe462b5 457 main/binary-amd64/Packages
+ 6cd3d32a94a19c23c31671a3403e669ee8ff41d0 330 main/binary-amd64/Packages.gz
+ ba48e8de54ba1a6b4ee263873e313b9efb541354 85 main/binary-amd64/Release
+SHA256:
+ 5e56ef1fcb321e76046a71e0596733b4882143824f11219f6f4c78529c932f0d 457 main/binary-amd64/Packages
+ 70a4ebb09574c63bc3aec7c36ccf7ba93ba53ee29639d95c1e308369225af3fe 330 main/binary-amd64/Packages.gz
+ 4278adb687950706b9daca924c8db468c360e4156202445d143c384a5e6b879c 85 main/binary-amd64/Release

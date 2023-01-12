@@ -1,0 +1,4 @@
+Component: main
+Origin: repo.example.com
+Label: repo.example.com
+Architecture: amd64
